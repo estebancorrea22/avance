@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(90deg, #969180, #150d08);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    animation: fadeInUp 0.6s ease-in-out forwards;
+    opacity: 0;
+    animation-delay: 0.2s;
+}
+
+h1 {
+    color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+
+
+nav ul li a:hover {
+    color: #ff6600;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+} 
+.section-title {
+    font-size: 2em;
+    color: #ff6600;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+
+.roles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.role {
+    width: 240px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 12px;
+    overflow: hidden; 
+    background: #fff; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.4s, box-shadow 0.4s; 
+}
+
+.role:hover {
+    transform: translateY(-8px) scale(1.03); 
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.role-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #ff6600;
+    object-fit: cover; 
+    margin-top: 15px; 
+    transition: transform 0.3s, opacity 0.3s; 
+}
+
+.role-img:hover {
+    transform: scale(1.1); 
+    opacity: 0.9;
+}
+
+.role h3 {
+    margin: 10px 0 5px; 
+    font-size: 1.4em;
+    color: #ff6600;
+}
+
+.role p {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 15px;
+    padding: 0 10px; 
+}
+
+h2 {
+    color: #ff6600;
+}
+
+h3 {
+    margin-top: 15px;
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    animation: fadeInUp 0.6s ease-in-out forwards;
+    opacity: 0;
+    animation-delay: 0.2s;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.2em; 
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+}
