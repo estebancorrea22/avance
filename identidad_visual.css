@@ -208,6 +208,18 @@ footer {
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); 
 }
 
+.site-map {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.site-map-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
