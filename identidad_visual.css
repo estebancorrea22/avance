@@ -220,6 +220,26 @@ footer {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+.youtube-video-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.youtube-video-container iframe {
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.youtube-video-container iframe:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
 @keyframes fadeIn {
     from {
         opacity: 0;
